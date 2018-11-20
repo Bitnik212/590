@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Roboto';
   font-weight: bold;
-  src: url(fonts/Roboto-Bold.ttf);
+  src: url(Roboto-Bold.ttf);
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: light;
-  src: url(fonts/Roboto-Light.ttf);
+  src: url(Roboto-Light.ttf);
 }
 @font-face {
   font-family: 'Roboto';
@@ -16,12 +16,12 @@
 @font-face {
   font-family: 'Roboto';
   font-weight: medium;
-  src: url(fonts/Roboto-Medium.ttf);
+  src: url(Roboto-Medium.ttf);
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: thin;
-  src: url(fonts/Roboto-Thin.ttf);
+  src: url(Roboto-Thin.ttf);
 }
 a{
   text-decoration: none;
@@ -39,7 +39,7 @@ a:active {
   color: black;
 }
 body{
-  background: url("/imgs/kot2.png");
+  background: url("kot2.png");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: cover;
