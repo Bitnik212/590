@@ -51,7 +51,7 @@ header{
 }
 .header_main{
   animation: movetobig 2s 1;
-  animation-delay: 1s;
+  animation-delay: 0s;
   animation-timing-function: ease-out;
   font-family: "Roboto";
   font-weight: thin;
