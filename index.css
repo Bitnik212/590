@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: light;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: medium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: thin;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+a{
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+body{
+  background: url("/imgs/kot2.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+  background-position: right center ;
+}
+header{
+  width: 50%;
+  display: grid;
+}
+.header_main{
+  animation: movetobig 2s 1;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  font-family: "Roboto";
+  font-weight: thin;
+  font-size: 72px;
+  margin-left: 230px;
+  padding: 0px;
+}
+.header_timetable{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  padding: 0;
+}
+.header_about{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 18px;
+}
+
+.body_welcome{
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-left: 230px;
+}
+.body_welcome_text{
+  font-family: "Roboto";
+  font-weight: light;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 230px;
+}
+.body_timetable_bordered{
+  font-family: "Roboto";
+  font-weight: light;
+  font-size: 30px;
+  margin-top: 65px;
+  margin-left: 230px;
+  border: 1px solid black;
+  padding: 22px;
+  display: flex;
+  position: fixed;
+}
+@keyframes movetobig {
+  from{
+    margin-left: 32px;
+    font-family: "Roboto";
+    font-size:24px;
+    font-weight: Regular;
+  }
+  60% {
+    transform: translateX(25px);
+  }
+  70% {  .
+    transform: translateX(25px);
+  }
+  80% {
+    transform: translateX(25px);
+  }
+  to{
+    transform: translateX(0px);
+    font-family: "Roboto";
+    font-weight: thin;
+    font-size: 72px;
+  margin-left: 230px;
+  }
+}
+/*--------lightSpeedIn-------*/
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  animation-direction: reverse;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+/*--------lightSpeedIn-------*/
+
+/*--------lightSpeedOut-------*/
+@-webkit-keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+/*--------lightSpeedOut-------*/
