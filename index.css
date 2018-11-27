@@ -1,27 +1,32 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: bold;
-  src: url(Roboto-Bold.ttf);
+  src: url(fonts/Roboto-Bold.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: light;
-  src: url(Roboto-Light.ttf);
+  src: url(fonts/Roboto-Light.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: Regular;
   src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: medium;
-  src: url(Roboto-Medium.ttf);
+  src: url(fonts/Roboto-Medium.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: thin;
-  src: url(Roboto-Thin.ttf);
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  src: url(fonts/AbrilFatface-Regular.otf);
 }
 a{
   text-decoration: none;
@@ -39,7 +44,7 @@ a:active {
   color: black;
 }
 body{
-  background: url("kot2.png");
+  background: url("/imgs/kot2.png");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: cover;
@@ -58,11 +63,13 @@ header{
   font-size: 72px;
   margin-left: 230px;
   padding: 0px;
+  width: 50%;
 }
 .header_timetable{
   font-family: "Roboto";
   font-weight: Regular;
   font-size: 24px;
+  margin-top: 25px;
   margin-left: 32px;
   padding: 0;
 }
@@ -75,9 +82,9 @@ header{
 }
 
 .body_welcome{
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 48px;
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  font-size: 60px;
   margin-top: 50px;
   margin-left: 230px;
 }
@@ -92,7 +99,7 @@ header{
   font-family: "Roboto";
   font-weight: light;
   font-size: 30px;
-  margin-top: 65px;
+  margin-top: 35px;
   margin-left: 230px;
   border: 1px solid black;
   padding: 22px;
@@ -123,69 +130,3 @@ header{
   margin-left: 230px;
   }
 }
-/*--------lightSpeedIn-------*/
-@keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
-  animation-direction: reverse;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-/*--------lightSpeedIn-------*/
-
-/*--------lightSpeedOut-------*/
-@-webkit-keyframes lightSpeedOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-    transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
-@keyframes lightSpeedOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
-    transform: translate3d(100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-}
-
-.lightSpeedOut {
-  -webkit-animation-name: lightSpeedOut;
-  animation-name: lightSpeedOut;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-}
-/*--------lightSpeedOut-------*/
