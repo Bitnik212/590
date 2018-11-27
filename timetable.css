@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: light;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: medium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: thin;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  src: url(fonts/AbrilFatface-Regular.otf);
+}
+::selection{
+  background: #adadad;
+}
+a{
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 50%;
+  display: grid;
+}
+.header_main{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 5px;
+  padding: 0px;
+}
+.header_timetable{
+  animation: movetobig 2s 1;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  font-family: "Roboto";
+  font-weight: thin;
+  font-size: 72px;
+  margin-left: 230px;
+  margin-right: 0;
+  margin-top: 18px;
+  padding: 0px;
+  width: 50%;
+}
+.header_about{
+
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 5px;
+  padding: 0px;
+}
+.body_p{
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  font-size: 60px;
+  text-align: center;
+}
+.body_p_undertext{
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+@keyframes movetobig {
+  from{
+    margin-left: 32px;
+    font-family: "Roboto";
+    font-size:24px;
+    font-weight: Regular;
+  }
+  60% {
+    transform: translateX(25px);
+  }
+  70% {  .
+    transform: translateX(25px);
+  }
+  80% {
+    transform: translateX(25px);
+  }
+  to{
+    transform: translateX(0px);
+    font-family: "Roboto";
+    font-weight: thin;
+    font-size: 72px;
+  margin-left: 230px;
+  }
+}
