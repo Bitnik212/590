@@ -28,6 +28,9 @@
   font-weight: Regular;
   src: url(fonts/AbrilFatface-Regular.otf);
 }
+::selection{
+  background: #adadad;
+}
 a{
   text-decoration: none;
 }
