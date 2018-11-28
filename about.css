@@ -108,7 +108,9 @@ header{
   justify-content: space-between;
   position: relative;
 }
-
+.body_authortext_designby:hover{
+  border-bottom: 1px solid #adadad;
+}
 .body_authortext_designby {
   font-family: "Roboto";
   font-weight: Regular;
