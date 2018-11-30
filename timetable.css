@@ -51,8 +51,8 @@ body{
   padding: 0;
 }
 header{
-  position:  absolute;
-  display:  block;
+  width: 50%;
+  display: grid;
 }
 .header_main{
   font-family: "Roboto";
@@ -63,17 +63,9 @@ header{
   padding: 0px;
 }
 .header_timetable{
-  font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 24px;
-  margin-left: 32px;
-  margin-top: 18px;
-  padding: 0;
-}
-.header_about{
-  animation: movetobig 0.5s 1;
+  animation: movetobig 2s 1;
   animation-delay: 0s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   font-family: "Roboto";
   font-weight: thin;
   font-size: 72px;
@@ -83,59 +75,27 @@ header{
   padding: 0px;
   width: 50%;
 }
-.body_box{
-position:  absolute;
-margin-top: 140px;
-  margin-left: 240px;
-  margin-right: 240px;
-  padding: 0;
-}
-.body_abouttext_box{
+.header_about{
 
-  margin-bottom: 0px;
-
-}
-.body_abouttext{
-  font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.body_authortext_box {
-  margin-top: 190px;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-.body_authortext_designby_a:hover{
-  border-bottom: 1px solid #adadad;
-}
-.body_authortext_designby {
   font-family: "Roboto";
   font-weight: Regular;
   font-size: 24px;
-
+  margin-left: 32px;
+  margin-top: 5px;
+  padding: 0px;
 }
-
-.body_authortext_team {
+.body_p{
   font-family: "AbrilFatface";
   font-weight: Regular;
-  font-size: 36px;
-  margin-top: -9px;
+  font-size: 60px;
+  text-align: center;
 }
-.body_authortext_programmedby_a:hover{
-  border-bottom: 1px solid #adadad;
-}
-.body_authortext_programmedby {
+.body_p_undertext{
   font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 24px;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
 }
-
 @keyframes movetobig {
   from{
     margin-left: 32px;
