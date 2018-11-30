@@ -51,86 +51,91 @@ body{
   padding: 0;
 }
 header{
-  width: 50%;
-  display: grid;
+ position: block;
 }
 .header_main{
   font-family: "Roboto";
-  font-weight: thin;
+  font-weight: Regular;
   font-size: 24px;
   margin-left: 32px;
   margin-top: 5px;
   padding: 0px;
 }
-.header_timetable{
-  font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 24px;
-  margin-left: 32px;
-  margin-top: 18px;
-  padding: 0;
+.header_tt_box{
+  display: flex;
+
 }
-.header_about{
-  animation: movetobig 2s 1;
+.header_tt_choise_box{
+  display: flex;
+  position: relative;
+  margin-left: 500px;
+    margin-top: 28px;
+  text-align: center;
+
+}
+.header_tt_choise1{
+
+}
+.header_tt_choise2{
+
+}
+.header_timetable{
+
+}
+.a_header_timetable{
+  animation: movetobig 0.5s 1;
   animation-delay: 0s;
   animation-timing-function: ease-out;
   font-family: "Roboto";
   font-weight: thin;
   font-size: 72px;
   margin-left: 230px;
-  margin-right: 0;
   margin-top: 18px;
-  padding: 0px;
-  width: 50%;
-}
-.body_box{
-  margin-left: 240px;
-  margin-right: 240px;
-  padding: 0;
-}
-.body_abouttext_box{
-  margin-top: 120px;
-  margin-bottom: 0px;
-}
-.body_abouttext{
-  font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.body_authortext_box {
-  margin-top: 190px;
+  margin-right: 0;
   margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+  padding: 0px;
 }
-.body_authortext_designby_a:hover{
-  border-bottom: 1px solid #adadad;
-}
-.body_authortext_designby {
+.header_about{
   font-family: "Roboto";
   font-weight: Regular;
   font-size: 24px;
-
+  margin-left: 32px;
+  margin-top: 5px;
+  padding: 0px;
 }
-
-.body_authortext_team {
+.body_p{
   font-family: "AbrilFatface";
   font-weight: Regular;
-  font-size: 36px;
-  margin-top: -9px;
+  font-size: 60px;
+  text-align: center;
 }
-
-.body_authortext_programmedby {
+.body_p_undertext{
   font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 24px;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
 }
 
+#bday{
+ font-family: "Roboto";
+ font-size: 20px;
+ font-weight: light;
+}
+#bweek{
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: light;
+}
+
+.choisediv{
+  display: none;
+}
+div:target {
+  display: block;
+}
+div[id*=a]:target ~ #day {
+  display: none;
+}
 @keyframes movetobig {
   from{
     margin-left: 32px;
@@ -154,4 +159,13 @@ header{
     font-size: 72px;
   margin-left: 230px;
   }
+}
+
+}
+.night_mode:checked + :root {
+   filter: invert(100%);
+   background: black;
+}
+* {
+   background-color: inherit;
 }

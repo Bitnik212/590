@@ -1,15 +1,13 @@
-<html>
+<?include 'function.php';?>
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
   <head>
-    <link rel="stylesheet" href="about.css">
-    <title>New Web Site 590 group</title>
-
+    <link rel='stylesheet' href='/css/about.css'>
+    <meta charset="utf-8">
+    <title><?echo $title;?></title>
   </head>
   <body>
-    <header>
-      <section class="header_main"><a class="a_header_main" href="http://new590.ru/">Главная</a></section>
-      <section class="header_timetable"><a class="a_header_timetable" href="http://new590.ru/timetable.html">Расписание</a></section>
-      <section class="header_about"><a class="a_header_about" href="http://new590.ru/about.html">О нас</a></section>
-    </header>
+    <? include 'header.php';?>
     <div class="body_box">
       <div class="body_abouttext_box">
         <div class="body_abouttext">
@@ -21,7 +19,7 @@
       </div>
       <div class="body_authortext_box">
         <div class="body_authortext_designby">
-          Designed by <b><a href="https://vk.com/goodbyte" class="body_authortext_designby_a" target="_blank">Uzzaw</a></b>
+          Designed by <b><a href="<?echo $uzzawlink;?>" class="body_authortext_designby_a" target="_blank">Uzzaw</a></b>
         </div>
         <div class="body_authortext_team">
           <b>Team</b>

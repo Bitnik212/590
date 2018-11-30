@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: light;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: medium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: thin;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  src: url(fonts/AbrilFatface-Regular.otf);
+}
+::selection{
+  background: #adadad;
+}
+a{
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  position:  absolute;
+  display:  block;
+}
+.header_main{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 5px;
+  padding: 0px;
+}
+.header_timetable{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-top: 18px;
+  padding: 0;
+}
+.header_about{
+  animation: movetobig 0.5s 1;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  font-family: "Roboto";
+  font-weight: thin;
+  font-size: 72px;
+  margin-left: 230px;
+  margin-right: 0;
+  margin-top: 18px;
+  padding: 0px;
+  width: 50%;
+}
+.body_box{
+position:  absolute;
+margin-top: 140px;
+  margin-left: 240px;
+  margin-right: 240px;
+  padding: 0;
+}
+.body_abouttext_box{
+
+  margin-bottom: 0px;
+
+}
+.body_abouttext{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.body_authortext_box {
+  margin-top: 190px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.body_authortext_designby_a:hover{
+  border-bottom: 1px solid #adadad;
+}
+.body_authortext_designby {
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+
+}
+
+.body_authortext_team {
+  font-family: "AbrilFatface";
+  font-weight: Regular;
+  font-size: 36px;
+  margin-top: -9px;
+}
+.body_authortext_programmedby_a:hover{
+  border-bottom: 1px solid #adadad;
+}
+.body_authortext_programmedby {
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+}
+
+@keyframes movetobig {
+  from{
+    margin-left: 32px;
+    font-family: "Roboto";
+    font-size:24px;
+    font-weight: Regular;
+  }
+  60% {
+    transform: translateX(25px);
+  }
+  70% {  .
+    transform: translateX(25px);
+  }
+  80% {
+    transform: translateX(25px);
+  }
+  to{
+    transform: translateX(0px);
+    font-family: "Roboto";
+    font-weight: thin;
+    font-size: 72px;
+  margin-left: 230px;
+  }
+}

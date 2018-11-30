@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: bold;
   src: url(fonts/Roboto-Bold.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: light;
   src: url(fonts/Roboto-Light.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: Regular;
   src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: medium;
   src: url(fonts/Roboto-Medium.ttf);
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: thin;
   src: url(fonts/Roboto-Thin.ttf);
 }
@@ -47,54 +47,67 @@ a:active {
   color: black;
 }
 body{
-  margin: 0;
-  padding: 0;
+  background: url("/imgs/kot2.svg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+  background-position: right center ;
 }
 header{
   width: 50%;
   display: grid;
 }
 .header_main{
-  font-family: "Roboto";
-  font-weight: Regular;
-  font-size: 24px;
-  margin-left: 32px;
-  margin-top: 5px;
-  padding: 0px;
-}
-.header_timetable{
-  animation: movetobig 2s 1;
+  animation: movetobig 0.5s 1;
   animation-delay: 0s;
   animation-timing-function: ease-out;
   font-family: "Roboto";
   font-weight: thin;
   font-size: 72px;
   margin-left: 230px;
-  margin-right: 0;
-  margin-top: 18px;
   padding: 0px;
   width: 50%;
 }
+.header_timetable{
+  font-family: "Roboto";
+  font-weight: Regular;
+  font-size: 24px;
+  margin-top: 25px;
+  margin-left: 32px;
+  padding: 0;
+}
 .header_about{
-
   font-family: "Roboto";
   font-weight: Regular;
   font-size: 24px;
   margin-left: 32px;
-  margin-top: 5px;
-  padding: 0px;
+  margin-top: 18px;
 }
-.body_p{
+
+.body_welcome{
   font-family: "AbrilFatface";
   font-weight: Regular;
   font-size: 60px;
-  text-align: center;
+  margin-top: 50px;
+  margin-left: 230px;
 }
-.body_p_undertext{
+.body_welcome_text{
   font-family: "Roboto";
-  font-weight: 100;
-  font-size: 20px;
-  text-align: center;
+  font-weight: light;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 230px;
+}
+.body_timetable_bordered{
+  font-family: "Roboto";
+  font-weight: light;
+  font-size: 30px;
+  margin-top: 35px;
+  margin-left: 230px;
+  border: 1px solid black;
+  padding: 22px;
+  display: flex;
+  position: fixed;
 }
 @keyframes movetobig {
   from{
