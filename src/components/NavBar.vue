@@ -2,15 +2,15 @@
   <div>
     <header>
       <div class="header_main">
-        <router-link class="a_header_main" to="/">Главная</router-link>
+        <router-link class="a_header_main" to="/" :class="{ active: $route.name == 'Home'}">Главная</router-link>
       </div>
       <div class="header_timetable">
-        <router-link class="a_header_timetable" to="/timetable"
+        <router-link class="a_header_timetable" to="/timetable" :class="{ active: $route.name == 'Timetable'}"
           >Расписание</router-link
         >
       </div>
       <div class="header_about">
-        <router-link class="a_header_about" to="/about">О нас</router-link>
+        <router-link class="a_header_about" to="/about" :class="{ active: $route.name == 'About'}">О нас</router-link>
       </div>
     </header>
   </div>
@@ -19,7 +19,11 @@
 <script>
 export default {
   name: "NavBar",
-  data() {}
+  data() {
+    return {
+      text: ""
+    }
+  }
 };
 </script>
 

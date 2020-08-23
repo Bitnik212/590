@@ -12,13 +12,13 @@ const routes = [
   },
   {
     path: "/timetable",
-    name: "timetable",
+    name: "Timetable",
     component: () =>
       import(/* webpackChunkName: "Timetable" */ "../layouts/timetable/index.vue")
   },
   {
     path: "/about",
-    name: "about",
+    name: "About",
     component: () =>
       import(/* webpackChunkName: "About" */ "../layouts/about/index.vue")
   }
